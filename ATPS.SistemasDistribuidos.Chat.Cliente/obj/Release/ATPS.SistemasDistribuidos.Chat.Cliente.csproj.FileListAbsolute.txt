@@ -1,0 +1,5 @@
+C:\Users\Marcos_2\Documents\Visual Studio 2012\Projects\ATPS.SistemasDistribuidos\ATPS.SistemasDistribuidos.Chat.Cliente\bin\ATPS.SistemasDistribuidos.dll
+C:\Users\Marcos_2\Documents\Visual Studio 2012\Projects\ATPS.SistemasDistribuidos\ATPS.SistemasDistribuidos.Chat.Cliente\bin\ATPS.SistemasDistribuidos.pdb
+C:\Users\Marcos_2\Documents\Visual Studio 2012\Projects\ATPS.SistemasDistribuidos\ATPS.SistemasDistribuidos.Chat.Cliente\obj\Release\ATPS.SistemasDistribuidos.Chat.Cliente.csprojResolveAssemblyReference.cache
+C:\Users\Marcos_2\Documents\Visual Studio 2012\Projects\ATPS.SistemasDistribuidos\ATPS.SistemasDistribuidos.Chat.Cliente\obj\Release\ATPS.SistemasDistribuidos.dll
+C:\Users\Marcos_2\Documents\Visual Studio 2012\Projects\ATPS.SistemasDistribuidos\ATPS.SistemasDistribuidos.Chat.Cliente\obj\Release\ATPS.SistemasDistribuidos.pdb

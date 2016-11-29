@@ -1,0 +1,427 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    font-family: 'Arial Unicode MS';
+    font-variant: small-caps;
+    font-style: normal;
+    height: 100%;
+
+}
+
+
+input {
+    border: 0;
+}
+
+
+.chat {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.form {
+    width: 40%;
+    margin: auto;
+    position: relative;
+    top: 5%;
+}
+
+    .form h2 {
+        text-align: center;
+        color: #5d5959;
+    }
+
+.aviso-indisponibilidade {
+    border: solid 1px #eaedf5;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 17%;
+    background: #fdfdfd;
+    padding: 0px;
+    margin-top: 10%;
+}
+
+.aviso-indisponibilidade h2 {
+    text-align: center;
+    color: #5d5959;
+    margin-top: 11px;
+}
+
+.logo {
+    margin: auto;
+    margin-top: 11px;
+    height: 40px;
+    width: 100px;
+    opacity: 0.5;
+    overflow: hidden;
+}
+    .logo img {
+   
+width: 100%;
+   
+height: 82%;
+   
+margin: auto;
+   
+}
+
+.menu {
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.item-menu {
+    float: right;
+    padding: 0 4px 0 4px;
+    margin: 0 4px 0 4px;
+    cursor: pointer;
+    height: 25px;
+    border-left: solid 3px;
+}
+
+.principal-container {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.view-content {
+    margin: auto;
+    width: 70%;
+    overflow: hidden;
+    height: 82%;
+    border: 1px solid rgba(112, 130, 186, 0.19);
+    margin-top: 10px;
+    box-shadow: 6px 6px 7px #ece8e8;
+}
+
+.view-lateral {
+    float: left;
+    height: 100%;
+    width: calc(30% - 2px);
+    border-right: 1px solid #e9ecf4;
+}
+
+.chat-atendente {
+    height:100%;
+}
+
+.view-chat-atendimentos {
+    float: left;
+    height: 100%;
+    width: calc(30% - 2px);
+    border-right: 1px solid #e9ecf4;
+    overflow: hidden;
+}
+
+.box-cadastrar {
+    padding: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 91px);
+    background: #FFF;
+}
+
+.box-login-atendente {
+    padding: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 91px);
+    background: #FFF;
+}
+
+.botao-cadastrar {
+    width: 100px;
+    height: 45px;
+    border-radius: 2px;
+    border: 1px solid #ded2d2;
+    cursor: pointer;
+    float: right;
+    background: rgba(212, 205, 205, 0.17);
+}
+
+.view-conversas {
+    width: 98%;
+    overflow-y: auto;
+    float: left;
+    height: 99%;
+    overflow-x: hidden;
+    margin: 5px;
+    margin-top: 2px;
+}
+
+    .view-conversas .conversa {
+        width: 97%;
+        background: #eef0f7;
+        cursor: pointer;
+        border: 1px solid #dad1d1;
+        height: 50px;
+        margin-top: 5px;
+        padding: 2px 2px 2px 5px;
+    }
+
+    .view-conversas .conversa-selecionada {
+        width: 98%;
+        cursor: pointer;
+        height: 50px;
+        padding: 2px 0 4px 4px;
+        background: linear-gradient(to right, #ebecef,rgb(253, 253, 253));
+    }
+
+    .view-conversas .foto {
+        height: 44px;
+        width: 44px;
+        margin: 1px;
+        border: 1px solid #ced6d2;
+        float: left;
+    }
+
+    .view-conversas .conversa:hover {
+        background: rgba(230, 232, 247, 0.28);
+    }
+
+.field-groups {
+    overflow: hidden;
+}
+
+    .field-groups .field-form {
+        width: calc(100% - 28px);
+        padding: 3px;
+        height: 34px;
+        border: 1px solid #ded2d2 !important;
+        margin: 5px 20px 10px 20px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+.view-mensagens {
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+.view-mensagens-admin {
+    float: left;
+    height: calc(100% - 9px);
+    width: calc(70% - 0px);
+    background: #fdfdfd;
+    padding: 0px;
+}
+
+.mensagens {
+    overflow-y: auto;
+    height: 80%;
+    width: calc(100% - 8px);
+    border-radius: 1px;
+    padding-bottom: 20px;
+    margin: 5px;
+}
+
+    .mensagens .mensagem {
+        font-size: small;
+    }
+
+
+    .mensagens .mensagem-recebida {
+        border-radius: 3px;
+        padding: 10px;
+        margin-left: 23px;
+        margin-top: 10px;
+        position: relative;
+        float: left;
+        width: 47%;
+        left: -1%;
+        box-shadow: 3px 3px 3px #dedddd;
+        background: #cff1d0;
+    }
+
+    .mensagens .mensagem-enviada {
+        border-radius: 3px;
+        padding: 10px;
+        margin-right: 23px;
+        margin-top: 10px;
+        position: relative;
+        float: right;
+        width: 47%;
+        right: 1%;
+        background: #eceef5;
+        box-shadow: -3px 4px 3px #e8e4e4;
+        word-break: break-word;
+    }
+
+
+    .mensagens .mensagem-recebida:before {
+        position: relative;
+        float: left;
+        position: absolute;
+        content: "";
+        border-top: 20px solid transparent;
+        border-right: 15px solid #cff1d0;
+        bottom: 13px;
+        right: 100%;
+    }
+
+    .mensagens .mensagem-recebida:after {
+        position: relative;
+        right: 100%;
+        content: "";
+        position: absolute;
+        border: solid;
+        border-width: 5.1px 10px;
+        border-left-color: transparent;
+        border-bottom-color: #FFF;
+        border-top-color: transparent;
+        border-right-color: #fff;
+        top: 15px;
+        float: right;
+    }
+
+
+    .mensagens .mensagem-enviada:before {
+        position: relative;
+        left: 100%;
+        content: "";
+        border-top: 19px solid transparent;
+        border-left: 15px solid #eceef5;
+        position: absolute;
+        top: 14px;
+        float: right;
+    }
+
+    .mensagens .mensagem-enviada:after {
+        position: relative;
+        left: 100%;
+        content: "";
+        position: absolute;
+        border: solid;
+        border-width: 5.1px 11px;
+        border-left-color: #fdfdfd;
+        border-bottom-color: #fdfdfd;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        top: 24px;
+        float: right;
+    }
+
+    .mensagens .nome-remetente {
+    }
+
+
+.envio {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-top: solid 1px #eee;
+}
+    .envio div {
+        width:95%;
+        margin: 0 auto;
+    }
+
+
+.view-mensagens-admin .field-groups .field-form {
+    overflow: hidden;
+    width: 79%;
+    padding: 3px;
+    height: 25px;
+    margin: 5px 20px 10px 20px;
+    border-radius: 5px;
+}
+
+.view-mensagens .field-groups .field-form {
+    overflow: hidden;
+    width: 79%;
+    padding: 3px;
+    height: 25px;
+    margin: 5px 20px 10px 20px;
+    border-radius: 5px;
+}
+
+.field-groups .botao-acao {
+    width: 70px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #111;
+    cursor: pointer;
+}
+
+.field-groups .botoes-acao :hover {
+    background-color: #eee;
+}
+
+
+.field-form textarea {
+    height: 71px;
+    border: 1px solid rgba(230, 229, 234, 0.99);
+    width: 85%;
+}
+
+.field-form input {
+    width: 12%;
+    right: 47%;
+}
+
+.botao-enviar {
+    float: right;
+    overflow: hidden;
+    height: auto;
+    height: 76px;
+    border: 1px solid rgba(230, 229, 234, 0.99);
+    cursor: pointer;
+    background: #f9f9f8;
+}
+
+.botoes-acao:hover {
+    background-color: #eee;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 15px 20px;
+    color: white;
+    position: fixed;
+    top: calc(100% - 207px);
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+}

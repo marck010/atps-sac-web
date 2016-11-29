@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ATPS.SistemasDistribuidos.dll">
+      <publishTime>11/07/2016 03:35:00</publishTime>
+    </File>
+    <File Include="Content/Imagens/Logo-SAC-0800-Facil.jpg">
+      <publishTime>09/26/2016 01:37:07</publishTime>
+    </File>
+    <File Include="Content/Imagens/nobody_m.original.jpg">
+      <publishTime>10/25/2016 20:16:48</publishTime>
+    </File>
+    <File Include="Content/main.css">
+      <publishTime>11/23/2016 22:01:08</publishTime>
+    </File>
+    <File Include="Controller/AtendenteController.js">
+      <publishTime>11/23/2016 21:52:09</publishTime>
+    </File>
+    <File Include="Controller/AtendenteController1.js">
+      <publishTime>10/13/2016 22:24:09</publishTime>
+    </File>
+    <File Include="Controller/ClienteController.js">
+      <publishTime>11/23/2016 22:04:21</publishTime>
+    </File>
+    <File Include="libs/angular-route.js">
+      <publishTime>05/31/2016 23:44:06</publishTime>
+    </File>
+    <File Include="libs/angular.min.js">
+      <publishTime>05/26/2016 18:58:11</publishTime>
+    </File>
+    <File Include="libs/jquery-2.1.4.min.js">
+      <publishTime>12/25/2015 14:53:30</publishTime>
+    </File>
+    <File Include="libs/linq.js">
+      <publishTime>08/29/2016 00:11:51</publishTime>
+    </File>
+    <File Include="Scripts/Main.js">
+      <publishTime>11/23/2016 20:16:20</publishTime>
+    </File>
+    <File Include="Scripts/Servicos/CacheObjetosServico.js">
+      <publishTime>10/12/2016 17:41:39</publishTime>
+    </File>
+    <File Include="Scripts/Servicos/WebSocketsServico.js">
+      <publishTime>11/08/2016 01:22:44</publishTime>
+    </File>
+    <File Include="Views/atendente.html">
+      <publishTime>11/23/2016 21:49:46</publishTime>
+    </File>
+    <File Include="Views/cadastroAtendente.html">
+      <publishTime>11/04/2016 22:48:07</publishTime>
+    </File>
+    <File Include="Views/chat.html">
+      <publishTime>11/23/2016 21:49:58</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/23/2016 22:11:48</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

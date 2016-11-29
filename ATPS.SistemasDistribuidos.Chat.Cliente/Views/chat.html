@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Chat </title>
+
+    <link rel="stylesheet" href="../Content/main.css" />
+</head>
+<body ng-app="ModuloChat">
+    <div class="principal-container"  ng-controller="ClienteController">
+       <div class="logo">
+            <img width="100%" src="../Content/Imagens/Logo-SAC-0800-Facil.jpg" />
+        </div>
+        <div class="menu" ng-show="Chat.Conectado">
+            <div class="item-menu" ng-click="Chat.Desconectar()">
+                <span>Sair</span>
+            </div>
+        </div>
+        <div class="view-content" >
+            <div class="box-cadastrar" ng-hide="Chat.Conectado">
+                <div class="form">
+                    <h2>Bem vindo!!</h2>
+                    <h2>Preencha seus dados para ser atendido</h2>
+                    <br />
+                    <div class="field-groups">
+                        <input placeholder="Nome" class="field-form" type="text" ng-model="Chat.Remetente.Nome" />
+                    </div>
+                    <div class="field-groups">
+                        <input placeholder="E-Mail" class="field-form" type="text" ng-model="Chat.Remetente.Email" />
+                    </div>
+                    <div class="field-groups">
+                        <input placeholder="Telefone" class="field-form" type="text" ng-model="Chat.Remetente.Telefone" />
+                    </div>
+                    <div class="field-groups">
+                        <input class="botao-cadastrar" type="button" ng-keyup="Chat.Remetente.CadastrarEnter($event)" value="Entrar" ng-click="Chat.Cadastrar()" />
+                    </div>
+                </div>
+            </div>
+            <div class="chat" ng-show="Chat.Conectado">
+
+                <div class="view-mensagens">
+                    <div class="aviso-indisponibilidade" ng-hide="Chat.Atendente">
+                        <h2>No momento não há nenhum atendente disponivel.Favor aguarde o atendimento. </h2>
+                    </div>
+
+                    <div class="mensagens">
+                        <div class="mensagem" ng-repeat="mensagem in Chat.Atendente.Conversa.Mensagens">
+                            <!--<span class="nome-remetente">{{mensagem.Remetente.Nome}}</span>-->
+                            <div ng-class="mensagem.Remetente.ChaveAcesso == Chat.Remetente.ChaveAcesso? 'mensagem-enviada': 'mensagem-recebida'" ng-model="mensagem.Texto">{{mensagem.Texto}}</div>
+                        </div>
+                    </div>
+                    <div class="envio field-form" ng-show="Chat.Conectado">
+                        <div class="">
+                            <textarea ng-model="Chat.Mensagem" row="50"></textarea>
+                            <input class="botao-enviar" type="button" ng-keyup="Chat.Remetente.EnviarEnter($event)" ng-click="Chat.Remetente.Enviar()" value="Enviar" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../libs/angular.min.js"></script>
+<script type="text/javascript" src="../libs/angular-route.js"></script>
+<script type="text/javascript" src="../libs/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="../libs/linq.js"></script>
+<script type="text/javascript" src="../Scripts/Main.js"></script>
+<script type="text/javascript" src="../Scripts/Servicos/WebSocketsServico.js"></script>
+<script type="text/javascript" src="../Scripts/Servicos/CacheObjetosServico.js"></script>
+<script type="text/javascript" src="../Controller/ClienteController.js"></script>
+</html>
